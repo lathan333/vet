@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Vet</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+  <style>
+    /* Add custom styles */
+    .form-container {
+      margin-top: 100px; /* Adjust this value as needed */
+    }
+
+    /* Additional custom styles */
+    .w3-bar-item.hamburger {
+      display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      .w3-bar-item.hamburger {
+        display: block;
+      }
+    }
+  </style>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card w3-left-align">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black hamburger" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-deep-purple">Home</a>
+      <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Us</a>
+      <a href="services.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Services</a>
+      <a href="resources.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Resources</a>
+      <a href="faq.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">FAQ</a>
+      <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact US</a>
+      <div class="w3-bar-item w3-right w3-padding">
+        <a href="" target="_blank"><i class="fa fa-instagram w3-hover-opacity fa-2x w3-text-deep-purple" style="margin-right: 8px;"></i></a>
+        <a href="" target="_blank"><i class="fa fa-facebook w3-hover-opacity fa-2x w3-text-deep-purple"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-large" style="margin-top: 0;">
+    <span class="w3-bar-item w3-xlarge" style="padding: 16px 24px; display: block;">Menu</span>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-dark-purple">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-padding-large">About Us</a>
+    <a href="services.html" class="w3-bar-item w3-button w3-padding-large">Services</a>
+    <a href="resources.html" class="w3-bar-item w3-button w3-padding-large">Resources</a>
+    <a href="faq.html" class="w3-bar-item w3-button w3-padding-large">FAQ</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">Contact Us</a>
+  </div>
+
+  <!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+    <img src="corgi.jpg" alt="boat" style="width:100%;min-height:350px;max-height:700px;">
+    <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+      <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">LEARN W3.CSS</button>
+    </div>
+  </div>
+
+    <div class="form-container">
+    <legend>Book Vet Appointment</legend>
+    <form>
+        <fieldset>
+            <label for="name">Your name: </label>
+            <input id="name" type="text">
+            <br>
+            <label for="phone">Your Phone: </label>
+            <input id="phone" type="text">
+            <br>
+            <label for="email">Your Email: </label>
+            <input id="email" type="text">
+            <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <label for="pet">Your Pet's Name: </label>
+            <input id="pet" type="text">
+            <br>
+            <label for="pet">Your Pet's Age: </label>
+            <input id="age" type="text">
+            <br>
+            <label for="breed">Your Pet's Breed: </label>
+            <input id="breed" type="text">
+            <br>
+            <label for="sex"> Your Pet's Sex: </label>
+            <input id="sex" type="checkbox">Male
+            <input id="sex" type="checkbox">Female
+            <br>
+        </fieldset>
+        <p>Enter Appointment Date</p>
+        <label for="date">Date: </label>
+        <input id="date" type="date">
+        <br>
+        <button>Book Appointment</button>
+    </form>
+    </div>
+</body>
+</html>
